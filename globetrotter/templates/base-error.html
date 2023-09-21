@@ -1,0 +1,16 @@
+{% extends "base-generic.html" %}
+
+{%block styleimports%}
+{% load static %}
+{%endblock%}
+
+{%block content%}
+
+<div class="d-flex align-items-center justify-content-center flex-row-reverse vh-100">
+    <div class="text-center row justify-content-center">
+        <h1 class="display-1"><strong>{%block errorname%}{%endblock%}</strong></h1>
+        <a class="text-decoration-none" href="{% url 'finance:index' %}"><h5>BACK HOME</h5></a>
+
+    </div>
+</div>
+{%endblock%}

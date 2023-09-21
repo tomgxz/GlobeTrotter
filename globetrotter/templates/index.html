@@ -1,0 +1,124 @@
+{% extends 'base-generic.html' %}
+
+{% load static %}
+
+{%block tab-title%}{%block meta-title%}{%block apple-title%}{%block app-title%}{%block og-title%}{%block tw-title%}
+TITLE {%endblock%}{%endblock%}{%endblock%}{%endblock%}{%endblock%}{%endblock%}
+
+{%block styleimports%}
+<link href="{% static 'css/build.css' %}" rel="stylesheet" type="text/css" />{%endblock%}
+
+{% block content %}
+
+<div id="rotation-animation-wrapper">
+
+    <div class="rotation-circle outer"></div>
+    <div class="rotation-circle middle"></div>
+    <div class="rotation-circle inner"></div>
+
+    <div class="rotation-circle-border middle"></div>
+    <div class="rotation-circle-border inner"></div>
+
+</div>
+
+<div id="page-wrapper">
+
+    <div class="page-title-wrapper">
+        <div class="page-title"></div>
+
+        <hr class="page-title-divider">
+
+        <div class="page-subtitle"></div>
+
+        <div class="page-selector">
+            <span id="page-selector-prev" role="button">PREV</span>
+            <hr class="page-selector-divider">
+            <span id="page-selector-next" role="button">NEXT</span>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="navbar-bg"></div>
+<div class="footer-bg"></div>
+
+<nav class="navbar">
+    <div class="container-fluid">
+
+        <div class="d-none d-md-flex flex-1 justify-content-start toggler-wrapper">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav-collapse"
+                aria-controls="navbar-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="d-flex flex-1 justify-content-start justify-content-md-center">
+            <a class="navbar-brand m-0" href="">
+                <span class="h4 text-uppercase">Globetrotter</span>
+            </a>
+        </div>
+
+        <div class="d-flex flex-1 justify-content-end">
+            <div class="navbar-right d-flex align-items-center">
+                <a href="" class="text-uppercase text-white link-underline-spacing text-end">List All Destinations</a>
+            </div>
+        </div>
+
+
+
+        <!--
+
+        <div class="collapse navbar-collapse" id="navbar-nav-collapse">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li>
+            </ul>
+        </div>
+
+      -->
+
+    </div>
+</nav>
+
+<div class="footer navbar mb-2 ps-2 pe-2">
+    <div class="container-fluid">
+
+        <a href="" class="d-flex flex-1 justify-content-start align-items-center text-light text-decoration-none">
+            <i class="fal fa-share-nodes fs-4" style="transform:rotateY(180deg)"></i>
+            <hr style="width:16px" class="d-none d-md-block ms-2 me-2 opacity-100">
+            <span class="d-none d-md-block">SHARE</span>
+        </a>
+
+        <div class="d-flex flex-3 justify-content-end align-items-center flex-column">
+            <a href="" class="text-uppercase text-white link-underline-spacing mb-1 d-none d-md-block">Discover This Destination</a>
+            <a href="" class="text-uppercase text-white link-underline-spacing mb-1 d-block d-md-none">Discover</a>
+            <span id="credit" class="d-none d-md-block">Credit to <a target="_blank" href="https://dribbble.com/shots/8867020--Roto-transitions-Concept">Giulio Cuscito</a> for the concept</span>
+            <span id="credit" class="d-block d-md-none">Credit: <a target="_blank" href="https://dribbble.com/shots/8867020--Roto-transitions-Concept">Giulio Cuscito</a></span>
+        </div>
+
+        <div id="page-selector-random" class="d-flex flex-1 justify-content-end align-items-center" role="button">
+            <span class="d-none d-md-block">RANDOMIZE</span>
+            <hr style="width:16px" class="d-none d-md-block ms-2 me-2 opacity-100">
+            <i class="fal fa-shuffle fs-4"></i>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{%block scriptimports %}
+
+
+<script src="{% static 'js/index.js' %}"></script>
+{%endblock%}

@@ -1,0 +1,32 @@
+@import "../bootstrap/scss/functions";
+
+$white: #ffffff;
+
+$light: #d1d3e1;
+$dark: #000000;
+$primary: #195aa3;
+$secondary: #505597;
+$info: #3a4e5d;
+$success: #009a5d;
+$warning: #dcca00;
+$danger: #e92500;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+$font-family-sans-serif:
+  // Safari for OS X and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Lato",
+  // Android
+  "Roboto",
+  // Basic web fallback
+  "Helvetica Neue",
+  Arial, sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+@import "../bootstrap/scss/bootstrap";

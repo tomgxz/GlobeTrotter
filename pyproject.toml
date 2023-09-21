@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "GlobeTrotter"
+version = "0.1.0"
+description = "A vacation website, built to improve my page animation and transitioning skills."
+authors = ["tomgxz <tomgxz.dev@gmail.com>"]
+license = "GPL-3.0-or-later"
+repository = "https://github.com/tomgxz/GlobeTrotter"
+keywords = ["python","html","scss","jquery","django"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.2.5"
+django-bootstrap-v5 = "^1.0.11"
+whitenoise = "^6.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
