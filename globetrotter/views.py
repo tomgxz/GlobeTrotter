@@ -26,7 +26,7 @@ def getlocations(request):
             "id":loc.urlname,
             "title":loc.title,
             "subtitle":loc.subtitle,
-            "image":static(loc.coverimage)
+            "image":static(loc.coverimage.replace("\\","/"))
         })
 
     return HttpResponse(json.dumps({"pages":pages}))
